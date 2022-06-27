@@ -5,8 +5,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    // Car ile ilgili veritabanında yapacağım operasyonları (CRUD) içeren interface
-    public interface ICarDal : IEntityRepository<Car>
+    public interface IBrandDal : IEntityRepository<Brand>
     {
 
     }
