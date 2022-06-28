@@ -22,14 +22,9 @@ namespace Business.Concrete
             return _brandDal.GetAll();
         }
 
-        public List<Brand> GetBrandsByBrandId(int id)
+        public Brand GetBrandByBrandId(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<Brand> GetCarsByColorId(int id)
-        {
-            throw new NotImplementedException();
+            return _brandDal.Get(b => b.BrandId == id);
         }
     }
 }

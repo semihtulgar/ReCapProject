@@ -23,12 +23,7 @@ namespace Business.Concrete
 
         public Color GetColorByColorId(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<Color> GetColorsByColorId(int id)
-        {
-            throw new NotImplementedException();
+            return _colorDal.Get(c => c.ColorId == id);
         }
     }
 }
